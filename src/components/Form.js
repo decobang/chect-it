@@ -10,10 +10,12 @@ const Form = ({ addTodo }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!inputValue.trim()) { // Check if inputValue is empty or only contains whitespace
+            return; // If it is, return early and don't call addTodo
+        }
         addTodo(inputValue);
         setInputValue('');
     };
-
     return (
         <div className={styles['form-container']}>
             <form onSubmit={handleSubmit}>

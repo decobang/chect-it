@@ -6,9 +6,17 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  min-height: 500px;
+  overflow: hidden;
   font-family: monospace;
   background-color: #333;
   color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  /* margin-bottom: 3rem; */
+
 }
 
 .main-container {
@@ -22,6 +30,7 @@
   
 }
 
+
 .todos-container {
   display: flex;
   flex-direction: row;
@@ -33,10 +42,33 @@
   gap: 12px;
 }
 
+
 .todo-container, .completed-container {
   background-color:whitesmoke;
   flex-grow: 1;
   padding: 1rem;
   border-radius: 1rem;
   
+}
+
+@media (max-width: 600px) {
+  .todos-container {
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: whitesmoke;
+  }
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .todo-container, .completed-container {
+   
+    padding: .5rem;
+  }
 }
