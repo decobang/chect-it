@@ -7,3 +7,31 @@
   width: 100%;
   font-family: monospace;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  width: 75%;
+  background-color: #333;
+  border-radius: 12px;
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  overflow-y: auto;
+  gap: 12px;
+}
+
+.todo-container, .completed-container {
+  background-color: whitesmoke;
+  
+}
