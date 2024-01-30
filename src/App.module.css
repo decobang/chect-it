@@ -1,38 +1,42 @@
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   font-family: monospace;
+  background-color: #333;
+  color: white;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   height: 75%;
   width: 75%;
-  /* background-color: #333; */
-  border-radius: 12px;
-  padding: 1rem;
+  gap: 2rem;
+  
 }
 
 .todos-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding: 10px;
   overflow-y: auto;
   gap: 12px;
 }
 
 .todo-container, .completed-container {
-  background-color: whitesmoke;
+  background-color:whitesmoke;
+  flex-grow: 1;
+  padding: 1rem;
+  border-radius: 1rem;
   
 }
