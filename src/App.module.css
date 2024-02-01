@@ -60,3 +60,16 @@ h1 {
     overflow: auto;
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  background-color: #333;
+  color: whitesmoke; /* Change this */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #333;
+}

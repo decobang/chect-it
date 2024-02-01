@@ -50,6 +50,9 @@ function App() {
           </div>
         </div>
       </div>
+      <footer className={styles['footer']}>
+        <p>Created by David Coggin | [DC-5] | 2024 Copyright</p>
+      </footer>
     </div>
   );
 }
