@@ -14,11 +14,11 @@ const Todo = ({ todo, toggleComplete, deleteTodo }) => {
         <div className={todo.completed ? `${styles.todo} ${styles['todo-completed']}` : styles.todo}>
             <p>{todo.text}</p>
             <div className={styles['buttons-container']}>
-           
+            <div className={styles.divider}></div>
                 <button onClick={handleCheckboxChange}>
                     {todo.completed ? 'Undo' : 'Complete'}
                 </button>
-                <div className={styles.divider}></div>
+                {/* <div className={styles.divider}></div> */}
                 <button onClick={handleDeleteClick}>Delete</button>
             </div>
         </div>

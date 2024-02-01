@@ -2,24 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
- font-family: monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: whitesmoke;
-  color: whitesmoke;
-
-  ::-webkit-scrollbar {
-    display: none;
-
-   
-  }
-
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 .App {
   width: 100vw;
   height: 100vh;

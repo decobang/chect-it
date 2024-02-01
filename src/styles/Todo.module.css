@@ -12,7 +12,6 @@ margin-bottom: 4px;
 
 .todo-completed {
     opacity: 0.75; /* Adjust as needed */
-    
 }
 
 .buttons-container {
@@ -30,8 +29,7 @@ margin-bottom: 4px;
 .todo button {
 border: none;
 background-color: #333;
-color: lightblue;
-font-family: monospace;
+color: darkgrey;
 }
 
 .todo input {
