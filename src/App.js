@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Form from './components/Form';
 import Todo from './components/Todo';
-
 import styles from './App.module.css';
 
+// Main entry to the app
 function App() {
   const [todos, setTodos] = useState(() => {
     const savedTodos = localStorage.getItem('todos');
