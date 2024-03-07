@@ -1,4 +1,8 @@
+// This form handles user input. Its where users can enter new tasks and edit any task
+
 import React, { useState } from 'react';
+
+// edits the Form component
 import styles from '../styles/Form.module.css';
 
 const Form = ({ addTodo }) => {
@@ -10,8 +14,10 @@ const Form = ({ addTodo }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!inputValue.trim()) { // Check if inputValue is empty or only contains whitespace
-            return; // If it is, return early and don't call addTodo
+
+        // Check if inputValue is empty or only contains whitespace. If it is, return early and don't call addTodo
+        if (!inputValue.trim()) { 
+            return; 
         }
         addTodo(inputValue);
         setInputValue('');
