@@ -1,4 +1,6 @@
 import React from 'react';
+
+// edits the Todo component
 import styles from '../styles/Todo.module.css';
 
 const Todo = ({ todo, toggleComplete, deleteTodo }) => {
